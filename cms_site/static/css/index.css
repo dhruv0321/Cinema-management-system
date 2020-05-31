@@ -16,10 +16,13 @@ h1 a {
     margin-left: 40px;
 }
 
-h1, h2, h3, h4 {
-    padding: 20px;
+h1, h2, h3 {
+    padding: 10px;
     color: #C25100;
     font-family: 'Comic Neue';
+}
+h4 {
+    padding: 1px;
 }
 
 .date {
@@ -41,5 +44,28 @@ h1, h2, h3, h4 {
     margin-right: 20px;
 }
 .search {
-    padding: 20px;
+    padding: 1px;
 }
+/* th {
+    background-color: #C25100;
+    color: white;
+} */
+caption {
+    padding: 10px;
+    color: #C25100;
+    font-size: 18pt;
+}
+/* table,td,th {
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th,td {
+    padding: 8px;
+}
+tr:nth-child(even) {background-color: #f2f2f2;} */
