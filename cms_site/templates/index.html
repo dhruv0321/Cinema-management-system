@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h2>booking search</h2>
+    <div class="search">
+        <form method="POST" action="/booking">
+            {% csrf_token %}
+            <input type="text" name="textfield">
+            <button type="submit">Search Booking</button>
+        </form>
+    </div>    
+    
+    <h2>customer search</h2>
+    <div class="search">
+        <form class="form-horizontal" method="POST" action="/customer">
+            {% csrf_token %}
+            <input type="text" name="textfield">
+            <button type="submit">Search Customer</button>
+        </form>
+    </div>
+    
+    <h2>display screenings</h2>
+    <div class="search">
+        <form method="POST" action="/screening">
+            {% csrf_token %}
+            <!-- <input type="text" name="textfield"> -->
+            <button type="submit">Search Screening</button>
+        </form>
+    </div>
+    
+    <h2>display films</h2>
+    <div class="search">
+        <form method="POST" action="/film">
+            {% csrf_token %}
+            <!-- <input type="text" name="textfield"> -->
+            <button type="submit">Search Films</button>
+        </form>
+    </div>
+    
+{% endblock %}
