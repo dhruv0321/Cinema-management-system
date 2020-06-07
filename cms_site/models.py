@@ -30,7 +30,7 @@ class Screening(models.Model):
     room = models.ForeignKey('Room',on_delete = models.CASCADE,)
     start_time = models.DateTimeField()
     def __str__(self):
-        return self.film.name
+        return self.film.name + " " + str(self.start_time)
 
 class Seat(models.Model):
     row_id = models.CharField(max_length =1,null = False)

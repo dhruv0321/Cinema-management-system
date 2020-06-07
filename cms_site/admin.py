@@ -17,7 +17,7 @@ class RoomAdmin(admin.ModelAdmin):
     list_display = ('name', 'no_seats')
 
 class ScreeningAdmin(admin.ModelAdmin):
-    list_display = ('film', 'room')
+    list_display = ('film', 'room', 'start_time')
 
 class SeatAdmin(admin.ModelAdmin):
     list_display = ('row_id', 'seat_number', 'room')
